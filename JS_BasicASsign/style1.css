@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.fav-img{
+    height: 100vh;
+    width: 100vw;
+}
+
+.number{
+    color: white;
+}
+
+img{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+.text{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+    background-color: black;
+}
+
+.prev, .next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2.5rem;
+    width: 5%;
+    color: white;
+    text-align: center;
+    transition: all 0.05s ease-in;
+}
+
+.prev:hover, .next:hover{
+    background-color: black;
+    opacity: 0.6;
+    border-radius: 0px 6px 6px 0px;
+    font-size: 3.1rem;
+}
+
+.prev{
+    left: 0;
+}
+
+.next{
+    right: 0;
+}
+
+.img_ele{
+    transition: all 5 ease-in;
+}

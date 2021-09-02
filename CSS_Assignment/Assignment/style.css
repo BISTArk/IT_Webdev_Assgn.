@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+/* font-family: 'Noto Sans', sans-serif; */
+
+
+*{
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body.side-body{
+    color: white;
+    background-color: black;
+}
+
+h1{
+    text-align: center;
+    color: black;
+    text-transform: capitalize;
+    text-shadow: #FC0 1px 0 10px;
+}
+
+h1.side-head{
+    color: white;
+}
+
+div.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+}
+
+div.form > *{
+    margin: 15px 0px;
+}
+
+div.add-con{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+
+}
+
+div.add-con > *{
+    margin: 5px 0px;
+}
+
+div.c4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px 80px;
+}
+
+div.c4 > *{
+    margin: 5px 0px;
+}
+
+div.maj-course{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px 80px;
+}
+
+div.maj-course > *{
+    margin: 5px 0px;
+    padding: 5px;
+    box-shadow: 10px 5px 5px grey;
+}
+
+div.min-course{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px 80px;
+}
+
+div.min-course > *{
+    margin: 5px 0px;
+    padding: 5px;
+    box-shadow: 10px 5px 5px grey;
+}
+
+ul.game-list > * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul.game-list > * >img{
+    float: right;
+    height: 300px;
+    width: 300px;
+}
+ul.game-list > * >p{
+    float: left;
+}
+
+div#hobbies{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px 80px;
+}
+
+div#hobbies>*{
+    margin: 10px 0px;
+}
+
+.c1 img{
+    border-radius: 30%;
+}
+
+.c1 td{
+    border: none;
+}
+
+.contents{
+    margin: 10px 0px;
+}
+
+.contents ul li{
+    list-style-type: disc;
+}
+
+.contents>ul{
+    display: flex;
+    justify-content: center;
+    margin: 25px 0px;
+}
+
+.contents>ul>*{
+    margin: 0px 20px;
+    padding: 0px 20px;
+}
+
+body.footer{
+    background-color: rgb(90, 88, 88);
+}
+
+.main-head {
+    animation: colorchange 5s infinite;
+  }
+  
+  @keyframes colorchange {
+    0% { color: red; }
+    50% { color: green; }
+    100% { color: red; }
+  }

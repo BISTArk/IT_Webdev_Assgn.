@@ -1,0 +1,112 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.container{
+    height: 100vh;
+    scroll-snap-type:y mandatory;
+    overflow: scroll;
+}
+
+section{
+    scroll-snap-align: center;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+
+.intro{
+    background-color: #E56399;
+    color: #320E3B;
+    /* color: #7F96FF; */
+    font-size: 2rem;
+    display: block;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    padding: 38vh 0px;
+}
+
+.bydiv{
+    float: right;
+    padding: 30px;
+}
+
+
+.dialog-box{
+    background-color: #E5C2C0;
+}
+
+form{
+    width: 60vw;
+}
+
+form input{
+    width: 60vw;
+    height: 30px;
+    margin: 2px;
+    padding: 3px;
+}
+
+div.field{
+    padding: 10px;
+}
+
+.invaild{
+    color: red;
+}
+
+textarea{
+    width: 60vw;
+    height: 20vh;
+    margin: 2px;
+    padding: 3px;
+}
+
+.submit-btn{
+    width: 20%;
+    height: 5%;
+    margin: 10px;
+    border-radius: 15px;
+    background-color: green;
+    color: floralwhite;
+}
+
+table{
+    width: 50%;
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+td,th{
+    text-align: center;
+    padding: 0.5rem;
+}
+
+td>*{
+    width: 80%;
+    height: 100%;
+}
+
+.total-btn{
+
+}
+
+#total-price{
+    border: 1px solid #320E3B;
+    width: 80%;
+    height: 100%;
+}

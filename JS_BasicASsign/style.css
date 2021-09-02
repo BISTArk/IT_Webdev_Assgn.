@@ -1,0 +1,69 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.container{
+    height: 100vh;
+    scroll-snap-type:y mandatory;
+    overflow: scroll;
+}
+
+section{
+    scroll-snap-align: center;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+
+.gallery-btn{
+    background-color: #071013;
+}
+
+button.btn{
+    width: 200px;
+    height: 60px;
+    border-radius: 20px;
+    background-image: linear-gradient(to top right,#016FB9 ,#22AED1);
+    transition: all 0.05s ease-in;
+}
+button.btn:hover{
+    width: 225px;
+    height: 65px;
+}
+
+.dialog-box{
+    background-color: #E5C2C0;
+}
+
+form{
+    width: 60vw;
+}
+
+form input{
+    width: 60vw;
+    height: 30px;
+    margin: 2px;
+    padding: 3px;
+}
+
+div.field{
+    padding: 10px;
+}
+
+.submit-btn{
+    width: 20%;
+    height: 5%;
+    margin: 10px;
+    border-radius: 15px;
+    background-color: green;
+    color: floralwhite;
+}

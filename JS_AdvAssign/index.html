@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <section class="intro">
+            <div class="title">
+                <h1>IT LAB ASSIGNMENT</h1><br>
+                <h3>3b. JavaScript Advanced</h3>
+            </div>
+            <div class="bydiv">
+                <h5 class="by">Akshay B Bistagond <br>191EC203</h5>
+            </div>
+        </section>
+        <section class="dialog-box">
+            <h1 class="form-head">Feedback form</h1>
+            <form id="feedback">
+                <div class="field">
+                    <label for="name">Enter Name:</label><br>
+                    <input type="text" name="name" id="name" placeholder="Full Name" required><br>
+                    <span class="invaild" id="invalid_name"></span>
+                </div>
+                <div class="field">
+                    <label for="city">Enter City:</label><br>
+                    <input type="text" name="city" id="City" placeholder="Lastname Firstname Middle_initial" required><br>
+                    <span class="invaild" id="invalid_city"></span>
+                </div>
+                <div class="field">
+                    <label for="phone">Enter Phone Number(first two digits are country code):</label><br>
+                    <input type="text" name="phone" id="phone" placeholder="911234455667" required><br>
+                    <span class="invaild" id="invalid_phone"></span>
+                </div>
+                <div class="field">
+                    <label for="mail">Enter Email-id:</label><br>
+                    <input type="email" name="mail" id="mail" placeholder="you@something.com" required><br>
+                    <span class="invaild" id="invalid_mail"></span>
+                </div>
+                <div class="field">
+                    <label for="comments">Please Leave comments...</label><br>
+                    <textarea type="text" name="comments" id="comments" rows="10" cols="75" placeholder="Feedback ..." required></textarea><br>
+                    <span class="invaild" id="invalid_comments"></span>
+                </div>
+            </form>
+            <button class="submit-btn" type="submit" form="feedback" id="submit-btn">Submit</button>
+        </section>
+        <section class="billing" id="billing">
+            <h1>Buy Amazing Merch <br><br><br></h1>
+            <table>
+                <tr>
+                  <th>Item</th>
+                  <th>Price/Item(Rs.)</th>
+                  <th>Quantity(no.)</th>
+                </tr>
+                <tr>
+                  <td>Hoodies</td>
+                  <td>1000</td>
+                  <td><input type="number" name="h_price" id="h_price" class="price" value="0"></td>
+                </tr>
+                <tr>
+                  <td>Coffee Mugs</td>
+                  <td>400</td>
+                  <td><input type="number" name="cm_price" id="cm_price" class="price" value="0"></td>
+                </tr>
+                <tr>
+                  <td>T-shirts</td>
+                  <td>600</td>
+                  <td><input type="number" name="ts_price" id="ts_price" class="price" value="0"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><button id="total-btn" class="total-btn">Find Total Price</button></td>
+                    <td ><input type="number" name="total_price" id="total_price" class="price" value="0.00" readonly></td>
+                  </tr>
+              </table>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE xhtml>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <section class="date-loop" id="date_sec">
+            <span class="time-taken" id="time-diff"></span>
+        </section>
+        <section class="gallery-btn">
+            <a href="./gallery.html"><button class="btn" id="gal-btn">My Favourites</button></a>
+        </section>
+        <section class="dialog-box">
+            <h1 class="form-head">Feedback form</h1>
+            <form id="feedback">
+                <div class="field">
+                    <label for="name">Enter Name:</label><br>
+                    <input type="text" name="name" id="name" placeholder="Full Name" required><br>
+                </div>
+                <div class="field">
+                    <label for="city">Enter City:</label><br>
+                    <input type="text" name="city" id="City" placeholder="City" required><br>
+                </div>
+                <div class="field">
+                    <label for="mail">Enter Email-id:</label><br>
+                    <input type="email" name="mail" id="mail" placeholder="you@something.com" required><br>
+                </div>
+                <div class="field">
+                    <label for="comments">Please Leave comments...</label><br>
+                    <textarea type="text" name="comments" id="comments" rows="10" cols="75" placeholder="Feedback ..." required></textarea><br>
+                </div>
+
+            </form>
+            <button class="submit-btn" type="submit" form="feedback" id="submit-btn">Submit</button>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
