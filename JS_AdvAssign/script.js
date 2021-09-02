@@ -1,8 +1,17 @@
 const form = document.getElementById('feedback');
 let submitable = 5;
+let totalPrice = 0.00;
+const prices = {
+    hoodie : 1000,
+    coffeemug : 600,
+    shirt : 500
+}
 
-window.onload = ()=>{
-    form.reset();
+function loadpriceTable(){
+    for (const x in prices) {
+        const price = document.getElementById(`${x}_price`);
+        price.innerHTML = prices[x];
+    }
 }
 
 let validate = {
@@ -77,7 +86,34 @@ for (const x of form) {
     console.log(x);
 }
 
-const prices = []
+let updatePrice = ()=>{
+    totalPrice = 0;
+    console.log("HELLO");
+    for (const x in prices) {
+        totalPrice += (document.getElementById(`${x}_quant`).value)*prices[x];
+    }
+
+    document.getElementById('total_price').value = `${totalPrice}`;
+    console.log(document.getElementById('total_price'),totalPrice);
+}
+
+for (const x in prices) {
+    document.getElementById(`${x}_quant`).addEventListener('change',()=>{
+        updatePrice(x);
+    });
+
+}
+
+window.onload = ()=>{
+    form.reset();
+    loadpriceTable();
+    for (const x in prices) {
+        document.getElementById(`${x}_quant`).value = 0;
+    }
+    updatePrice();
+}
+
+
 
 document.getElementById("submit-btn").addEventListener('click',(event)=>{
     event.preventDefault();
@@ -87,3 +123,8 @@ document.getElementById("submit-btn").addEventListener('click',(event)=>{
         alert("Fill all the required Fields");
     }
 });
+
+
+document.getElementById("total-btn").addEventListener('click',()=>{
+    alert(`Total Price of the order = ${totalPrice}`)
+})
