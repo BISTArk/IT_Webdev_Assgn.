@@ -114,6 +114,9 @@ window.onload = ()=>{
 }
 
 
+document.getElementById("total-btn").addEventListener('click',()=>{
+    alert(`Total Price of the order = ${totalPrice}`)
+})
 
 document.getElementById("submit-btn").addEventListener('click',(event)=>{
     event.preventDefault();
@@ -124,7 +127,3 @@ document.getElementById("submit-btn").addEventListener('click',(event)=>{
     }
 });
 
-
-document.getElementById("total-btn").addEventListener('click',()=>{
-    alert(`Total Price of the order = ${totalPrice}`)
-})
