@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="headerfooter.css" />
+    <link rel="stylesheet" href="contactcss.css" />
+    <title>Contact</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <a href="/" class="nav-logo">Akshay B Bistagond</a>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="./index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="./blogs.html" class="nav-link">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a href="./about.html" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="./contact.html" class="nav-link">Contact</a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </header>
+
+    <section class="about">
+      <div class="details">
+        <h1 class="contact-details-title">Contact Details</h1>
+        <div class="phone-details">
+          <i class="fas fa-phone"></i>
+          <span class="phone">+91 777-7777-777</span>
+        </div>
+        <div class="linkedin-details">
+          <i class="fab fa-linkedin"></i>
+          <a
+            href="https://www.linkedin.com/in/akshay-bistagond/"
+            class="linkedin"
+            >https://www.linkedin.com/in/akshay-bistagond/</a
+          >
+        </div>
+        <div class="github-details">
+          <i class="fab fa-github"></i>
+          <a href="https://github.com/BISTArk" class="github"
+            >https://github.com/BISTArk</a
+          >
+        </div>
+      </div>
+      <form action="post" class="contact-form">
+        <h1 class="formtitle">Contact Me</h1>
+        <div class="form-field">
+          <label for="name" class="namelabel">Name</label>
+          <input type="text" class="nameinput" />
+        </div>
+        <div class="form-field">
+          <label for="mail" class="maillabel">Email</label>
+          <input type="email" class="mailinput" />
+        </div>
+        <div class="form-field">
+          <label for="subject" class="subjectlabel">Subject</label>
+          <input type="text" class="subjectinput" />
+        </div>
+        <div class="form-field spl-field">
+          <label for="content" class="contentlabel">Message</label>
+          <textarea type="text" class="contentinput"></textarea>
+        </div>
+        <button class="submit-btn">Submit</button>
+      </form>
+    </section>
+
+    <footer>Made with 💓 by Akshay B</footer>
+    <script src="./script.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,43 @@
+.jumbutron{
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 7rem;
+    background-position: center;
+    background-repeat: no-repeat;background-size: contain;
+    color: white;
+}
+
+.blogs{
+    max-width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 2% 10%;
+}
+
+.trending-title{
+    width: 100%;
+    text-align: center;
+    font-size: 3.7rem;
+    margin: 2.5%;
+}
+
+.divider{
+    background-color: #482ff7;
+    border-radius: 3px;
+    width: 20%;
+    height: 0.4vh;
+
+}
+
+.blog{
+    margin: 10px;
+    font-size: 2rem;
+}
+p{
+    margin: 20px 0;
+}

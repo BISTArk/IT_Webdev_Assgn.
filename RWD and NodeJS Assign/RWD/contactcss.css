@@ -1,0 +1,138 @@
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: aliceblue;
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  width: 70%;
+  margin: 0% 15%;
+}
+
+.details {
+  background-color: #b9bdc7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 50%;
+  flex: 4;
+  border-radius: 0 0 0 30px;
+  box-shadow: 3px 3px 6px gray;
+  padding: 5% 5%;
+  font-size: 1.5rem;
+}
+
+.contact-details-title {
+  font-size: 4rem;
+  margin-bottom: 7%;
+}
+
+a {
+  color: black;
+}
+
+.contact-form {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 50%;
+  flex: 8;
+  box-shadow: 3px 3px 6px gray;
+  padding: 2%;
+  border-radius: 0 30px 0 0;
+  /* flex-grow: 1; */
+}
+
+.formtitle {
+  font-size: 4rem;
+  flex: 2;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  flex: 2;
+}
+
+.spl-field {
+  flex: 4;
+}
+
+label {
+  font-size: 1.5rem;
+}
+
+input {
+  flex-grow: 1;
+  margin: 0.2% 0%;
+  border: 1px solid #89a4ee;
+}
+
+.contentinput {
+  flex-grow: 1;
+  border: 1px solid #89a4ee;
+  resize: none;
+  padding: 0.2%;
+}
+.contentinput:focus,
+input:focus {
+  outline: none;
+}
+
+.submit-btn {
+  width: auto;
+  text-align: center;
+  bottom: 0;
+  width: 20%;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px gray;
+  margin: 2% 0%;
+  cursor: pointer;
+  flex: 1;
+  font-size: 1.8rem;
+}
+
+@media only screen and (max-width: 1024px) {
+
+    body{
+        width: 100%;
+        height: 100vh;
+    }
+
+  .about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+    margin: 0;
+    flex-grow: 1;
+  }
+
+  .details{
+    width: 90%;
+    flex:5;
+    flex-grow: 0;
+    font-size: 1.2rem;
+    border-radius: 0 30px 0 0;
+  }
+
+  .contact-form{
+      flex:7;
+    flex-grow: 0;
+    width: 90%;
+    border-radius: 0 0 0 30px;
+  }
+
+  .submit-btn{
+      width: 30%;
+  }
+}

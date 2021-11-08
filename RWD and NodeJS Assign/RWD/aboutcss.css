@@ -1,0 +1,140 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: aliceblue;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  margin: 0 20vw;
+}
+
+.circle {
+  width: 10vh;
+  height: 10vh;
+  border-radius: 50%;
+  background-color: #89a4ee;
+}
+
+.leftc {
+  margin: 0 0 5vh -10%;
+}
+
+.rightc {
+  margin: 5vh 0 0 85%;
+}
+
+.aboutcard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 5px 5px 10px gray;
+  height: 50%;
+}
+
+.picname {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  flex-direction: column;
+  background-color: white;
+}
+
+.desc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex: 1;
+  padding: 5%;
+  height: 100%;
+  background-color: #89a4ee;
+}
+
+.desc span {
+  font-size: 1.3rem;
+  text-align: justify;
+}
+
+.boldtext {
+  text-align: center;
+  font-weight: bold;
+}
+
+.mypic {
+  width: 30vh;
+  height: 30vh;
+  border-radius: 50%;
+  background-image: url("./assets/jujutsu-kaisen-wallpaper-1920x1200_6.jpg");
+  background-repeat: no-repeat;
+  margin: 5%;
+  background-size: cover;
+  background-position: center;
+}
+
+.name-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.name {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.wtami {
+  text-align: center;
+  font-size: 1.5rem;
+  opacity: 0.5;
+}
+
+@media only screen and (max-width: 1024px) {
+
+    body{
+        height: auto;
+    }
+
+    .about{
+        margin: 0 5vw;
+    }
+
+  .aboutcard {
+    flex-direction: column;
+  }
+
+  .mypic {
+    width: 30vw;
+    height: 30vw;}
+
+  .picname {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    background-color: white;
+  }
+
+  .desc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex: 1;
+    padding: 5%;
+    width: 100%;
+    background-color: #89a4ee;
+  }
+}
