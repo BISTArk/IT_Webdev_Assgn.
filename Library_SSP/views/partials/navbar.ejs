@@ -1,0 +1,34 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="/">My Lybrary</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="/">List <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/add">Add Books</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/update">Update Books</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/delete">Delete Books</a>
+        </li>
+      </ul>
+    </div>
+    <form class="form-inline" id="search_form">
+        <input
+          class="form-control mr-sm-2"
+          type="search"
+          placeholder="Search"
+          name="term"
+          aria-label="Search"
+        />
+        <button class="btn btn-outline-primary my-2 my-sm-0" id="search_btn" type="button">
+          Search
+        </button>
+      </form>
+  </nav>

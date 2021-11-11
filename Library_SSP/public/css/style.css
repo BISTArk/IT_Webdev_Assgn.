@@ -1,0 +1,34 @@
+.book_grid{
+    margin: 10px;
+    overflow: visible;
+    display: flex;
+    flex-direction: row;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+}
+
+h2{
+    text-align: center;
+    margin: 2% 0px;
+    font-size: 3.5rem;
+}
+
+.add_form{
+    margin: 2% 23%;
+    padding: 10px;
+}
+
+footer{
+    position: fixee;
+    width: 100%;
+   bottom: 0%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.delete_form{
+    margin: 3% 30%;
+    width: 40%;
+}
+

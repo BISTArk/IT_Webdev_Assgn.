@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('../partials/head.ejs')%>
+  </head>
+  <body>
+    <header><%- include('../partials/navbar.ejs') %></header>
+    <h2 class="title">Delete a book from My Lybrary</h2>
+
+    <% if(book!==null) {%> <%- include('../partials/delete_form.ejs'),
+    {book:book} %> <% }else {%> <%- include('../partials/find_book.ejs')%> <%}%>
+
+    <footer><%- include('../partials/foot.ejs')%></footer>
+  </body>
+</html>

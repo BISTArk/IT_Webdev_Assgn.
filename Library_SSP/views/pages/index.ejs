@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../partials/head.ejs')%>
+</head>
+<body>
+    <header>
+        <%- include('../partials/navbar.ejs') %>
+    </header>
+    <h2 class="title">My Lybrary</h2>
+    <% if(books.length>0) {%>
+    <%- include('../partials/book_grid.ejs'), {books:books} %>
+    <% }else {%>
+        <p>No Books available</p>
+        <%}%>
+    <footer>
+    <%- include('../partials/foot.ejs')%>
+
+    </footer>
+</body>
+</html>

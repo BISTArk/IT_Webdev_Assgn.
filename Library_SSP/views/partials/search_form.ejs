@@ -1,0 +1,17 @@
+<div class="card delete_form">
+    <img class="card-img-top othercoverimg" alt="<%=book.name%>" />
+    <div class="card-body">
+      <h5 class="card-title"><%= book.name %></h5>
+      <p class="card-text"><%= book.description %></p>
+    </div>
+    <ul class="list-group list-group-flush text-center">
+      <li class="list-group-item">Author : <%= book.author %></li>
+      <li class="list-group-item">Edition: <%= book.edition %></li>
+      <li class="list-group-item">Subject: <%= book.subject %></li>
+      <li class="list-group-item">Copies: <%= book.copies %></li>
+    </ul>
+    <script defer>
+        let test = '<%- JSON.stringify(book) %>';
+    </script>
+  </div>
+  
